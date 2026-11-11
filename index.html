@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VarFour — variation desk</title>
+  <meta name="description" content="Four live-instrument bars that vary the loop so the repeat is not a photocopy." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>VarFour</h1>
+  <p class="lead">Variation desk. Loops photocopy the same eight bars. Session players write four live bars of variation — bass walk, nylon figure, kit open, trumpet answer — so the second pass has a reason to exist. Live piano, upright, nylon, kit, trumpet, violin. Not a tag. Not a lift. Not a pre-chorus.</p>
+  <p class="status" id="status">Seating chairs…</p>
+  <p class="eyebrow">Groove</p>
+  <div class="row" id="grooves"></div>
+  <p class="eyebrow">Variation</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Form · loop 1–8 · variation 9–12</p>
+  <div class="bars" id="bars"></div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+  <p class="note">BPM and key persist. Export drops on the grid. Tap to start audio. iOS silent switch mutes Web Audio.</p>
+</main>
+<div class="dock">
+  <button id="playA">A · Loop</button>
+  <button id="playB">B · Full form</button>
+  <button id="play8">8 · Variation only</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="export">Export WAV+MIDI</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
